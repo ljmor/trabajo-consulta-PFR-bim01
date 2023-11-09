@@ -1,7 +1,6 @@
-def integracion(func: Double => Double, a: Int, b: Int): Double = {
+def integracion(func: Double => Double, a: Int, b: Int): Double =
   val funcX = (a: Int, b: Int) => (a + b).toDouble / 2
   (b - a) * ((func(a) + (4 * func(funcX(a, b))) + func(b)) / 6)
-}
 
 val func = (x: Double) => -Math.pow(x, 2) + (8 * x) -12
 // val func = (x: Double) => 3 * Math.pow(x, 2)
