@@ -12,5 +12,5 @@ val func = (x: Double) => -Math.pow(x, 2) + (8 * x) -12
 
 val result = integracion(func, 3, 5)
 
-val errorFunc = (valEsp: Double, valObt: Double) => valEsp - valObt
+val errorFunc = (valEsp: Double, valObt: Double) => math.abs(valEsp - valObt)
 errorFunc(7.33, result)
